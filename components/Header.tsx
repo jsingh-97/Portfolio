@@ -9,7 +9,7 @@ export default function Header({}: Props) {
     z-20 xl:items-center">
       <motion.div
         initial={{
-          x:-500,
+          x:-150,
           opacity:0,
           scale:0.5
         }} 
@@ -35,7 +35,7 @@ export default function Header({}: Props) {
       </motion.div>
       <motion.div 
         initial={{
-          x:500,
+          x:150,
           opacity:0,
           scale:0.5
         }} 
