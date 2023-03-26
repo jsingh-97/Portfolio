@@ -4,7 +4,7 @@ import oyopic from '../assets/paytm.jpg'
 import javalogo from '../assets/javalogo.svg'
 import springlogo from '../assets/springboot.png'
 import redislogo from '../assets/redis.png'
-import awslogo from '../assets/aws.png'
+import awslogo from '../assets/aws.jpg'
 import { motion } from 'framer-motion'
 type Props = {}
 
@@ -37,7 +37,7 @@ export default function ExperienceCard({ }: Props) {
             </motion.div>
             <div className='px-0 md:px-10'>
                 <h4 className='text-4xl font-light'>SOFTWARE DEVELOPER</h4>
-                <p className='font-bold text-2xl mt-1'>OYO</p>
+                <p className='font-bold text-2xl mt-1'> <a href='https://www.oyorooms.com/'>OYO</a></p>
                 <div className='flex space-x-2 my-2'>
                     <Image className='h-14 w-14 rounded-full'
                         src={javalogo}
