@@ -40,3 +40,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 //Libraries used
 react-framer-motion for animations
 react-simple-typewriter
+heroicons for beautiful hand crafter svg icons
