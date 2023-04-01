@@ -42,3 +42,4 @@ react-framer-motion for animations
 react-simple-typewriter
 heroicons for beautiful hand crafter svg icons
 react-hook-form for forms support in react components
+tailwind-scrollbar : for styling scrollbar
