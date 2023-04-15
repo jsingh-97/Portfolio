@@ -17,6 +17,9 @@ import reactImg from '../assets/react.png'
 import gcpImg from '../assets/gcp.png'
 import siaImg from '../assets/sia.png'
 import ibmDb2 from '../assets/ibmdb2.png'
+export const skills_ls = [
+	javaImg, springImg, nodejsImg, redisImg, awsImg, gcpImg, postgresImg, mongoDbImg, pythonImg
+]
 export const work_experience = [
 	{
 		id: 1,

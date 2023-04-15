@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import github from '../assets/github.png'
 type Props = {
     directionLeft?: boolean;
+    skill: string
 }
 
-function Skill({ directionLeft }: Props) {
+function Skill({ directionLeft, skill }: Props) {
     return (
         <div className='group relative flex cursor-pointer'>
             <motion.div
@@ -23,9 +23,11 @@ function Skill({ directionLeft }: Props) {
                 }}
             >
                 <Image
-                    className='rounded-full border border-gray-500 object-cover w-28 h-28
-                        xl:w-36 xl:h-36 filter group-hover:grayscale transition duration-300 ease-in-out'
-                    src={github}
+                    className='rounded-full border border-gray-500 object-cover w-36 h-36
+                        xl:w-42 xl:h-42 filter group-hover:grayscale transition duration-300 ease-in-out'
+                    src={skill}
+                    width={620}
+                    height={620}
                     alt=''
                 >
 

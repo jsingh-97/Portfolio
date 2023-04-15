@@ -1,9 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Skill from '../components/Skill'
-type Props = {}
+type Props = {
+    skills: string[]
+}
 
-export default function Skills({ }: Props) {
+export default function Skills({ skills }: Props) {
     return (
         <motion.div
             initial={{
@@ -21,23 +23,14 @@ export default function Skills({ }: Props) {
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 Skills
             </h3>
-            <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>
+            {/* <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>
                 Hover over a skill for current proficiency
-            </h3>
+            </h3> */}
             <div className='absolute top-48 grid grid-cols-4 gap-5'>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
+                {skills.map((skill, idx) => (
+                    <Skill skill={skill} />
+                )
+                )}
             </div>
         </motion.div>
     )
