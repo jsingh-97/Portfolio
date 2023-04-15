@@ -8,8 +8,6 @@ type Props = {
 }
 
 export default function ExperienceCard({ experience }: Props) {
-    console.log("hey")
-    console.log(experience)
     return (
         <article className='flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[500px]
         md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100
@@ -51,7 +49,7 @@ export default function ExperienceCard({ experience }: Props) {
                 </div>
                 <p className='uppercase py-5 text-gray-300'>{experience.dateStarted}-{experience.isCurrentlyWorkingHere ? "Present" : experience.dateEnded}</p>
                 {experience.points.map((points, idx) => (
-                    <ul className='list-disc space-y-4 ml-5 text-base sm:text-sm'>
+                    <ul className='list-disc space-y-4 ml-5 text-sm sm:text-base'>
                         <p className='mt-2'>{points.title}</p>
                         {points.point.map((point, idx) => (
                             <li key={idx}>{point}</li>
