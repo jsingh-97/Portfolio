@@ -6,15 +6,16 @@ import WorkExperience from '../components/WorkExperience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import ContactMe from '../components/ContactMe'
-import { Experience } from '../typings';
+import { Experience, Project } from '../typings';
 import { GetStaticProps } from 'next';
-import { skills_ls, work_experience } from '../cms/cms';
+import { skills_ls, work_experience, projects_ls } from '../cms/cms';
 
 type Props = {
   experiences: Experience[],
-  skills: string[]
+  skills: string[],
+  projects: Project[]
 }
-export default function Home({ experiences, skills }: Props) {
+export default function Home({ experiences, skills, projects }: Props) {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory 
     overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
@@ -35,7 +36,7 @@ export default function Home({ experiences, skills }: Props) {
         <Skills skills={skills} />
       </section>
       <section id="projects" className="snap-start">
-        <Projects />
+        <Projects projects={projects} />
       </section>
       <section id="contactMe" className='snap-end'>
         <ContactMe />
@@ -47,10 +48,12 @@ export default function Home({ experiences, skills }: Props) {
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const experiences: Experience[] = work_experience
   const skills = skills_ls
+  const projects = projects_ls
   return {
     props: {
       experiences,
-      skills
+      skills,
+      projects
     }
   }
 }

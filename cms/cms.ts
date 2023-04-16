@@ -23,7 +23,7 @@ export const skills_ls = [
 export const work_experience = [
 	{
 		id: 1,
-		companyName: "oyo",
+		companyName: "OYO",
 		companyImage: oyoImg,
 		dateStarted: 'June 2019',
 		dateEnded: 'July 2020',
@@ -45,7 +45,7 @@ export const work_experience = [
 	},
 	{
 		id: 2,
-		companyName: "paytm",
+		companyName: "PayTm",
 		companyImage: paytmImg,
 		dateStarted: 'July 2020',
 		dateEnded: 'September 2021',
@@ -116,5 +116,12 @@ export const work_experience = [
 			}
 		],
 		technologies: [javaImg, springImg, ibmDb2]
+	}
+]
+export const projects_ls = [
+	{
+		title: "Rate Limiter",
+		description: "Java Rate Limiter This is the fixed window rate limiter algorithm. It used redis for data store",
+		url: "https://github.com/jsingh-97/RateLimiter"
 	}
 ]
