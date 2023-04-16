@@ -8,7 +8,7 @@ import Projects from '../components/Projects'
 import ContactMe from '../components/ContactMe'
 import { Experience } from '../typings';
 import { GetStaticProps } from 'next';
-import { skills_ls, work_experience } from '../cms/work_experience';
+import { skills_ls, work_experience } from '../cms/cms';
 
 type Props = {
   experiences: Experience[],

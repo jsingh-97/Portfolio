@@ -14,7 +14,7 @@ interface Point {
 export interface Experience {
 	id: number;
 	type?: "experience";
-	company: string;
+	companyName: string;
 	companyImage: any;
 	dateStarted: string;
 	dateEnded: string;

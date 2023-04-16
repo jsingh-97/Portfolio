@@ -23,7 +23,7 @@ export const skills_ls = [
 export const work_experience = [
 	{
 		id: 1,
-		company: "oyo",
+		companyName: "oyo",
 		companyImage: oyoImg,
 		dateStarted: 'June 2019',
 		dateEnded: 'July 2020',
@@ -45,7 +45,7 @@ export const work_experience = [
 	},
 	{
 		id: 2,
-		company: "paytm",
+		companyName: "paytm",
 		companyImage: paytmImg,
 		dateStarted: 'July 2020',
 		dateEnded: 'September 2021',
@@ -69,7 +69,7 @@ export const work_experience = [
 	},
 	{
 		id: 3,
-		company: "Rocket Science",
+		companyName: "Rocket Science",
 		companyImage: rocketScienceImg,
 		dateStarted: 'December 2021',
 		dateEnded: 'May 2022',
@@ -91,7 +91,7 @@ export const work_experience = [
 	},
 	{
 		id: 4,
-		company: "Sia Innovations",
+		companyName: "Sia Innovations",
 		companyImage: siaImg,
 		dateStarted: 'May 2022',
 		dateEnded: 'Feb 2023',
