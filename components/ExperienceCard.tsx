@@ -40,16 +40,16 @@ export default function ExperienceCard({ experience }: Props) {
 
             </motion.div>
             <div className='px-0 md:px-10'>
-                <h4 className='text-4xl font-light'>SOFTWARE DEVELOPER</h4>
-                <p className='font-bold text-2xl mt-1'> <a href={experience.companyUrl}>{experience.companyName}</a></p>
+                <h4 className='text-xl font-light'>SOFTWARE DEVELOPER</h4>
+                <p className='font-bold text-xl mt-1'> <a href={experience.companyUrl}>{experience.companyName}</a></p>
                 <div className='flex space-x-2 my-2'>
                     {experience.technologies.map((technology, idx) => (
-                        <Image className='h-16 w-16 rounded-full' src={technology} alt="" width={320} height={320} />
+                        <Image className='h-12 w-12 rounded-full' src={technology} alt="" />
                     ))}
                 </div>
-                <p className='uppercase py-5 text-gray-300'>{experience.dateStarted}-{experience.isCurrentlyWorkingHere ? "Present" : experience.dateEnded}</p>
+                <p className='uppercase text-gray-300'>{experience.dateStarted}-{experience.isCurrentlyWorkingHere ? "Present" : experience.dateEnded}</p>
                 {experience.points.map((points, idx) => (
-                    <ul className='list-disc space-y-4 ml-5 text-sm sm:text-base'>
+                    <ul className='list-disc space-y-2 ml-5 text-sm sm:text-base'>
                         <p className='mt-2'>{points.title}</p>
                         {points.point.map((point, idx) => (
                             <li key={idx}>{point}</li>
