@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import mypic from '../assets/pic2.jpg';
+import mypic from '../assets/pic3.jpg';
 import { motion } from 'framer-motion';
 type Props = {};
 
@@ -36,8 +36,9 @@ export default function About({ }: Props) {
           once: true
         }}
       // className="md:px-2 xl:pd-15"
-      ><Image src={mypic} alt="Image" className='-mb-20 md:mb-0 flex-shrink-0 my-10 w-56 h-56 rounded-full
-        object-cover md:rounded-lg md:w-[400] md:h-[500px] xl:w-[1200px] xl:h-[500px]' />
+      ><Image src={mypic} alt="Image"
+        className='mb-20 md:mb-0 flex-shrink-0 my-10 w-56 h-56 rounded-full
+        object-cover md:rounded-lg md:w-[400px] md:h-[500px] xl:w-[1620px] xl:h-[520px]'/>
       </motion.div>
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>
